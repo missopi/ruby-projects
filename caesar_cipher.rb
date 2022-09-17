@@ -17,6 +17,9 @@ def caesar_cipher(string, shift_num = 6)
           else
             num
           end
+        elsif num == 38 # keeps spaces the same
+            num - 6
+          end
         end
     end
     shifted = shift_move.map {|num| num.chr}.join # turn numbers back to letters
