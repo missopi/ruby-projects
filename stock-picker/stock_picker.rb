@@ -1,6 +1,7 @@
 stocks = []
 
 def stock_picker(stocks)
+    stocks.shift if stocks[0] > stocks[1]
     stocks.each do |stock|
       p stock
     end
