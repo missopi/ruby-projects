@@ -7,8 +7,6 @@ string = ""
 
 def substrings(string, array)
     string_array = string.split(" ")
-    array_tally = array.tally
-    string_tally = string_array.tally
     sub_compare = string_array.intersection(array)
     sub_count = sub_compare.tally
 end
