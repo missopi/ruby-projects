@@ -8,7 +8,7 @@ string = ""
 
 def substrings(string, array)
     string_array = string.split(" ")
-    string_count = string_array.count
+    string_count = string_array.tally
 end
 
 
