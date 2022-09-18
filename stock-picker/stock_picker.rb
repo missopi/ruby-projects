@@ -1,7 +1,7 @@
 stocks = []
 
 def stock_picker(stocks)
-    stocks.shift if stocks[0] > stocks[1]
+    stocks.shift if stocks[0] == stocks.max
     stocks.each do |stock|
       p stock
     end
