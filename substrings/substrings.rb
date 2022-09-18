@@ -1,7 +1,7 @@
 dictionary = ["hi", "how", "hen", "the", "say", "i", "hand", "are", "is", "you're", 
-"you", "me", "we", "yesterday", "his", "your", "history", "what", "when", "low", "where", 
-"in", "find", "can", "go", "yes", "no", "when", "which", "handle", "below", "get", "look", 
-"looking", "hat", "day", "and", "sand", "he", "water", "at", "ate", "going"]
+"you", "me", "we", "yesterday", "his", "your", "history", "what", "when", "low", "there", 
+"in", "a", "find", "can", "go", "yes", "no", "when", "which", "handle", "below", "get", 
+"look", "looking", "hat", "day", "and", "sand", "he", "water", "at", "ate", "going", "was"]
 
 string = ""
 
@@ -12,4 +12,4 @@ def substrings(string, array)
 end
 
 
-substrings("hello there, how are you?", dictionary)
+substrings("yesterday was a day in history", dictionary)
