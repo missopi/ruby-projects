@@ -1,6 +1,13 @@
-dictionary = ["hello", "hi", "how", "have", "the", "say", "i", "hand", "are", "is", 
-"are", "you", "me", "we", "yesterday", "his", "your", "what", "find", "what", "when", 
-"is", "other", "where", "find", "can", "go", "yes", "no", "when", "which", "little", 
-"big", "get", "go", "look", "going", "sat", "seven", "cool", "yellow", "sand", "blue", 
-"water", "red", "sky"]
+dictionary = ["hi", "how", "hen", "the", "say", "i", "hand", "are", "is", 
+"you're", "you", "me", "we", "yesterday", "his", "your", "what", "history", "what", "when", 
+"is", "low", "where", "in", "find", "can", "go", "yes", "no", "when", "which", "handle", 
+"below", "get", "go", "look", "looking", "hat", "day", "and", "sand", "he", 
+"water", "at", "ate", "going"]
 
+string = ""
+
+def substrings(string, dictionary)
+    
+
+
+end
