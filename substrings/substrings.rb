@@ -6,6 +6,10 @@ dictionary = ["hi", "how", "hen", "the", "say", "i", "hand", "are", "is",
 
 string = ""
 
-def substrings(string, dictionary)
+def substrings(string, array)
     string_array = string.split(" ")
+    string_count = string_array.count
 end
+
+
+substrings("hello there, how are you?", dictionary)
