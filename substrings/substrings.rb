@@ -19,6 +19,7 @@ def substrings(string, array)
           end
         end
     end
+    return sub_count
 end
 
 
