@@ -3,18 +3,14 @@ dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","o
 string = ""
 
 def substrings(string, array)
-    sub_count = {}
-    string_array = string.downcase.split(" ")
-    string_array.each do |string_word|
-        array.each do |word|
-          if string_word.include?(word)
-            if sub_count[word] == nil
-              sub_count[word] = 1
-            else
-              sub_count[word] += 1
-            end
-          end
-        end
+  sub_count = Hash.new { |h, k| h[k] = 0 }
+    array.each do |word|
+      string.downcase.include?(word)
+      if sub_count[word] == nil
+        sub_count[word] = 1
+      else
+        sub_count[word] += 1
+      end
     end
     return sub_count
 end
