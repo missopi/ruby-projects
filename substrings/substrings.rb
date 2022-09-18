@@ -7,7 +7,5 @@ dictionary = ["hi", "how", "hen", "the", "say", "i", "hand", "are", "is",
 string = ""
 
 def substrings(string, dictionary)
-    
-
-
+    string_array = string.split(" ")
 end
