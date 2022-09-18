@@ -6,7 +6,7 @@ dictionary = ["hi", "how", "hen", "the", "say", "i", "hand", "are", "is", "you'r
 string = ""
 
 def substrings(string, array)
-    string_array = string.split(" ")
+    string_array = string.downcase.split(" ")
     sub_compare = string_array.intersection(array)
     sub_count = sub_compare.tally
 end
