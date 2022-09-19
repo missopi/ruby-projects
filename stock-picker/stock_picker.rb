@@ -1,13 +1,18 @@
 stocks = []
 
 def stock_picker(stocks)
+
+    buy_day = 0
+    sell_day = 0
+
     stocks.each_with_index do |stock, index|
         stock_max = stocks[index..].max
         stock_min = stocks[..index].min
         stock_difference = stock_max - stock
     end
    
-    # puts .to_a.inspect
+    pair = [buy_day, sell_day]
+    pair.inspect
 
   end
 
