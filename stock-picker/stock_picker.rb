@@ -4,11 +4,12 @@ def stock_picker(stocks)
 
     buy_day = 0
     sell_day = 0
+    profit = 0
 
     stocks.each_with_index do |stock1, index1|
         stocks.each_with_index do |stock2, index2|
             stock_difference = stock2 - stock1
-            p stock_difference
+            
         end
     end
    
