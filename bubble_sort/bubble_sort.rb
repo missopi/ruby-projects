@@ -1,4 +1,8 @@
 def bubble_sort(array)
+    length = array.length
+    return array if length <= 1
+
+
 end
 
 
