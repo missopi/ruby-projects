@@ -11,6 +11,8 @@ def stock_picker(stocks)
             stock_difference = stock2 - stock1
             if stock_difference > profit && index2 > index1
                 profit = stock_difference
+                buy_day = index1
+                sell_day = index2
             end
         end
     end
