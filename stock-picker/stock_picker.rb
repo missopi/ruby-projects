@@ -19,6 +19,6 @@ def stock_picker(stocks)
    
     p pair = [buy_day, sell_day]
 
-  end
+end
 
 stock_picker([17,3,6,9,15,8,6,1,10])
