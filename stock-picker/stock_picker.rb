@@ -12,7 +12,6 @@ def stock_picker(stocks)
     end
    
     pair = [buy_day, sell_day]
-    pair.inspect
 
   end
 
