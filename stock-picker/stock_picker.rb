@@ -2,7 +2,7 @@ stocks = []
 
 def stock_picker(stocks)
     stocks.each_with_index do |stock, index|
-      p stock
+        stock_max = stocks[index..].max
     end
    
     # puts .to_a.inspect
