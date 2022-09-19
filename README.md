@@ -7,3 +7,5 @@ caesar_cipher.rb
 substrings.rb
 
 stock_picker.rb
+
+bubble_sort.rb
