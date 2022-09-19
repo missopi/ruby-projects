@@ -9,7 +9,9 @@ def stock_picker(stocks)
     stocks.each_with_index do |stock1, index1|
         stocks.each_with_index do |stock2, index2|
             stock_difference = stock2 - stock1
-            
+            if stock_difference > profit && index2 > index1
+                profit = stock_difference
+            end
         end
     end
    
