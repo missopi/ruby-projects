@@ -5,13 +5,14 @@ def stock_picker(stocks)
     buy_day = 0
     sell_day = 0
 
-    stocks.each_with_index do |stock, index|
-        stock_max = stocks[index..].max
-        stock_min = stocks[..index].min
-        stock_difference = stock_max - stock
+    stocks.each_with_index do |stock1, index1|
+        stocks.each_with_index do |stock2, index2|
+            p stock1
+            p stock2
+        end
     end
    
-    pair = [buy_day, sell_day]
+    p pair = [buy_day, sell_day]
 
   end
 
