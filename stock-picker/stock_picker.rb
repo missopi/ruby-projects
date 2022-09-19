@@ -7,8 +7,8 @@ def stock_picker(stocks)
 
     stocks.each_with_index do |stock1, index1|
         stocks.each_with_index do |stock2, index2|
-            p stock1
-            p stock2
+            stock_difference = stock2 - stock1
+            p stock_difference
         end
     end
    
