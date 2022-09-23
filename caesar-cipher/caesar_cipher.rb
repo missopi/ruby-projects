@@ -26,7 +26,7 @@ def caesar_cipher(string, shift_num = 6)
         end
     end
     shifted = shift_move.map {|num| num.chr}.join # turn numbers back to letters
-    puts shifted
+    shifted
 end
 
 caesar_cipher(string)

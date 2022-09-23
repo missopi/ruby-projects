@@ -9,7 +9,7 @@ def substrings(string, array)
       sub_count[word] += 1
     end
   end
-  return sub_count
+  sub_count
 end
 
 
