@@ -13,7 +13,7 @@ describe '#caesar_cipher' do
     expect(caesar_cipher('Hello123')).to eql('Nkrru789')
   end
 
-  it 'returns a coded word including symbols' do
+  it 'returns a coded word without changing symbols' do
     expect(caesar_cipher('Hello()')).to eql('Nkrru()')
   end
 
