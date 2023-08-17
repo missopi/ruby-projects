@@ -3,18 +3,17 @@ string = gets.chomp
 
 def caesar_cipher(string, shift_num = 6)
   asciis = string.chars.map(&:ord) # give letters number value
-  shift_move = asciis.map { |num| num + shift_num }
-  shift_move.map do |num|
-    if num.between?(71, 96) # uppercase letters
-      num - 26 if num > 90
-    elsif num.between?(103, 128) # lowercase letters
-      num - 26 if num > 122
-    elsif num.between?(38, 70) # keeps spaces and punctuation the same
-      num - 6 if num == 38 || (num > 38 && num < 54) || (num > 62 && num < 71)
-      num + 6 if num > 53 && num < 63
+  asciis.map! do |num|
+    if num.between?(65, 90) # uppercase letters
+      num = ((num - 65 + shift_num) % 26) + 65
+    elsif num.between?(97, 122) # lowercase letters
+      num = ((num - 97 + shift_num) % 26) + 97
+    elsif num.between?(48, 57) # numbers
+      num = ((num - 48 + shift_num) % 26) + 48
     end
+    num.chr # turn numbers back to letters
   end
-  shift_move.map(&:chr).join # turn numbers back to letters
+  asciis.join
 end
 
 caesar_cipher(string)
